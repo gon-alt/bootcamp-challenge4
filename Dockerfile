@@ -5,9 +5,9 @@ WORKDIR /home/app
 
 RUN mkdir -p /home/app 
 
-COPY . /home/app
-
 RUN npm install
+
+COPY . /home/app
 
 EXPOSE 8888
 
